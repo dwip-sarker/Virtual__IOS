@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Vartual Iphone13</title>
+</head>
+
+<body>
+    <!-- Vartual Os Iphone 13 -->
+    <div class="main_area">
+        <div class="mobile_body">
+            <div class="border1">
+                <!-- MAIN SCREEN AREA -->
+                <div class="screen" style="background: url(./img.jpg); background-size: cover">
+
+                    <!-- Mobile Notch  -->
+                    <div class="notch">
+                        <div class="camara" style="color: blue; font-size: 46px"></div>
+                    </div>
+
+                    <!-- Mobile Buttons -->
+                    <div class="mute_btn"></div>
+                    <div class="voloumUp_btn" onclick=" on()"></div>
+                    <div class="voloumDown_btn"></div>
+                    <div class="power_btn" onclick="displayOn()" ondblclick="displayOff()"></div>
+
+                    <!-- APPS ICONS AREA -->
+                    <div class="apps_area">
+                        <div class="installing_apps_area">
+                            <img src="./jumpGame/loog.png" onclick="jumGameStart() " class="installedApp" alt="" />
+                        </div>
+                        <div class="main_apps_area">
+                            <img src="icon/settings.svg" class="apps" alt="" />
+                            <img src="icon/calculator.svg" class="apps" alt="" onclick="calculatorStart()" />
+                            <img src="icon/ios-message.svg" class="apps" alt="" />
+                            <img src="icon/app-store.svg" class="apps" alt="" />
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

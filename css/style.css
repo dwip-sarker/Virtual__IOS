@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Fredoka+One&family=Source+Sans+Pro:wght@300;400;600;900&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Mobile Main Body Styleing
+___________________________________________ */
+.main_area {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.main_area .mobile_body {
+    width: 251px;
+    height: 545px;
+    border: 2px solid black;
+    border-radius: 54px;
+    box-sizing: border-box;
+}
+
+.main_area .mobile_body .border1 {
+    width: 239px;
+    height: 534px;
+    border-radius: 52px;
+    border: 4px solid #3e4046;
+}
+
+.main_area .mobile_body .screen {
+    width: 223px;
+    height: 518px;
+    border-radius: 45px;
+    border: 8px solid #000000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: url("img.jpg");
+    background-size: cover;
+    transition: 0.4s;
+}
+
+.notch {
+    position: absolute;
+    height: 26px;
+    width: 114px;
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+    z-index: 10;
+}
+
+.notch .camara {
+    margin-top: 3px;
+    height: 12px;
+    width: 12px;
+    font-size: 72px;
+    font-size: 72px;
+    background: url("./main_lance.jpg");
+    background-size: cover;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.mute_btn {
+    position: absolute;
+    top: 15%;
+    left: -16px;
+    width: 2px;
+    height: 36px;
+    background-color: #44474c;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.voloumUp_btn {
+    position: absolute;
+    top: 28%;
+    left: -16px;
+    width: 2px;
+    height: 60px;
+    background-color: #44474c;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.voloumDown_btn {
+    position: absolute;
+    top: 45%;
+    left: -16px;
+    width: 2px;
+    height: 60px;
+    background-color: #44474c;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.power_btn {
+    position: absolute;
+    top: 30%;
+    right: -16px;
+    width: 2px;
+    height: 70px;
+    background-color: #44474c;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.apps_area {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.apps_area .installing_apps_area {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.apps_area .main_apps_area {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 7px 0;
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 10px;
+}
+
+.apps_area .installedApp {
+    width: 40px;
+    margin-left: 14px;
+}
+
+.apps {
+    width: 40px;
+    padding: 5px;
+}
