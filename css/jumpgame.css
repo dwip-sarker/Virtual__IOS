@@ -1,0 +1,61 @@
+.jumping_game_area {
+  width: 100%;
+  height: 100%;
+  background: url(../JumpGame/game_bg.jpg);
+  background-size: cover;
+  border-radius: 35px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: none;
+}
+
+.charcter {
+  height: 127px;
+  width: 100px;
+  background: url(../JumpGame/giphy.gif);
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  left: -17px;
+}
+
+.charAnimaiton {
+  animation: animiChar 1s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animiChar {
+  0% {
+    bottom: 20px;
+  }
+
+  100% {
+    bottom: 100px;
+  }
+}
+
+.car {
+  height: 120px;
+  width: 120px;
+  background: url(../JumpGame/car.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 65px;
+  right: -115px;
+}
+
+.carAnimaiton {
+  animation: animiCar 5s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes animiCar {
+  0% {
+    right: -115px;
+  }
+
+  100% {
+    right: 100%;
+  }
+}

@@ -1,60 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FONT AWESOME CSS CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- CALCULATOR Css -->
+    <link rel="stylesheet" href="./css/calculator.css" />
+    <!-- Jumpgame Css -->
+    <link rel="stylesheet" href="./css/jumpgame.css" />
 
     <title>Vartual Iphone13</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Vartual Os Iphone 13 -->
     <div class="main_area">
-        <div class="mobile_body">
-            <div class="border1">
-                <!-- MAIN SCREEN AREA -->
-                <div class="screen" style="background: url(./img.jpg); background-size: cover">
-
-                    <!-- Mobile Notch  -->
-                    <div class="notch">
-                        <div class="camara" style="color: blue; font-size: 46px"></div>
-                    </div>
-
-                    <!-- Mobile Buttons -->
-                    <div class="mute_btn"></div>
-                    <div class="voloumUp_btn" onclick=" on()"></div>
-                    <div class="voloumDown_btn"></div>
-                    <div class="power_btn" onclick="displayOn()" ondblclick="displayOff()"></div>
-
-                    <!-- APPS ICONS AREA -->
-                    <div class="apps_area">
-                        <div class="installing_apps_area">
-                            <img src="./jumpGame/gamepad.png" onclick="jumGameStart() " class="installedApp" alt="" />
-
-                        </div>
-                        <div class="main_apps_area">
-                            <!-- <img src="icon/settings.svg" class="apps" alt="" /> -->
-                            <img src="./JumpGame/loog.png" class="apps" alt="">
-                            <img src="icon/calculator.svg" class="apps" alt="" onclick="calculatorStart()" />
-                            <img src="icon/ios-message.svg" class="apps" alt="" />
-                            <img src="icon/app-store.svg" class="apps" alt="" />
-                        </div>
-                    </div>
-
-
-
-
-
-                </div>
+      <div class="mobile_body">
+        <div class="border1">
+          <!-- MAIN SCREEN AREA -->
+          <div
+            class="screen"
+            style="
+              background: url(./wellpaper/wellpapr1.jpg);
+              background-size: cover;
+            "
+          >
+            <!-- Mobile Notch  -->
+            <div class="notch">
+              <div class="camara" style="color: blue; font-size: 46px"></div>
             </div>
-        </div>
-    </div>
-</body>
 
+            <!-- Mobile Buttons -->
+            <div class="mute_btn"></div>
+            <div class="voloumUp_btn"></div>
+            <div class="voloumDown_btn"></div>
+            <div
+              class="power_btn"
+              onclick="displayOn()"
+              ondblclick="displayOff()"
+            ></div>
+
+            <!-- APPS ICONS AREA -->
+            <div class="apps_area">
+              <div class="installing_apps_area">
+                <!-- THIS FUTUER WILL COMMING SOON  -->
+              </div>
+              <div class="main_apps_area">
+                <img
+                  src="./JumpGame/loog.png"
+                  onclick="jumGameStart() "
+                  class="apps"
+                  alt=""
+                />
+                <img
+                  src="icon/calculator.svg"
+                  class="apps"
+                  alt=""
+                  onclick="calculatorStart()"
+                />
+                <img src="icon/ios-message.svg" class="apps" alt="" />
+                <img src="icon/settings.svg" class="apps" alt="" />
+              </div>
+            </div>
+
+            <!-- JUMPING GAMES DOM  -->
+            <div class="jumping_game_area" style="display: none">
+              <div class="game_top_area">
+                <p>score is: 1200</p>
+                <button>Back</button>
+              </div>
+              <div class="main_game_area">
+                <div class="charcter charAnimaiton"></div>
+                <div class="car carAnimaiton"></div>
+              </div>
+            </div>
+
+            <!-- CALCULATER DOM(APPS) -->
+            <div class="calculator" style="display: none">
+              <div class="display_area">
+                <input id="screen" name="screen" />
+              </div>
+              <div class="button_area">
+                <!-- First Row  -->
+                <div class="cal_btn_row">
+                  <div class="cal_btn">e</div>
+                  <div class="cal_btn">π</div>
+                  <div class="cal_btn">sin</div>
+                  <div class="cal_btn">deg</div>
+                </div>
+                <!-- Second Row  -->
+                <div class="other_cal_btn_row">
+                  <div class="cal_btn clear">C</div>
+                  <div class="cal_btn">(</div>
+                  <div class="cal_btn">)</div>
+                  <div class="cal_btn opp">/</div>
+                </div>
+                <div class="other_cal_btn_row">
+                  <div class="cal_btn">7</div>
+                  <div class="cal_btn">8</div>
+                  <div class="cal_btn">9</div>
+                  <div class="cal_btn opp">x</div>
+                </div>
+                <div class="other_cal_btn_row">
+                  <div class="cal_btn">4</div>
+                  <div class="cal_btn">5</div>
+                  <div class="cal_btn">6</div>
+                  <div class="cal_btn opp">-</div>
+                </div>
+                <div class="other_cal_btn_row">
+                  <div class="cal_btn">1</div>
+                  <div class="cal_btn">2</div>
+                  <div class="cal_btn">3</div>
+                  <div class="cal_btn opp">+</div>
+                </div>
+                <div class="other_cal_btn_row">
+                  <div class="cal_btn plus">0</div>
+                  <div class="cal_btn">.</div>
+                  <div class="cal_btn eqel">=</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./Script/index.js"></script>
+  </body>
 </html>
