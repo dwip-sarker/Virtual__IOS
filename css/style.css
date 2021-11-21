@@ -60,11 +60,12 @@ ___________________________________________ */
   width: 12px;
   font-size: 72px;
   font-size: 72px;
-  background: url("./main_lance.jpg");
+  background: url("../main_lance.jpg");
   background-size: cover;
   opacity: 0.5;
   border-radius: 50%;
   margin-left: 10px;
+  transition: 0.5s;
 }
 
 .mute_btn {

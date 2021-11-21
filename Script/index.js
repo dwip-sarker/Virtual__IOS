@@ -30,6 +30,7 @@ function jumGameStart() {
 
 //Function for run the colculator.
 function calculatorStart() {
+  display.style.background = "white";
   appsArea.style.display = "none";
   calculator.style.display = "block";
   let screenValue = "";
